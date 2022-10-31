@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="tuotetyylit.css">
+<title>Oma sivu - esittely</title>
+
+<body>
+
+    <section id="tuotelista" style="display: inherit ;">
+        <h1>Tuotteet</h1>
+        <p>Huom. Voit järjestää tuotelistan nousevaksi/laskevaksi hiirellä painean kohdasta "Hinta"</p>
+        <p>Kaikissa tuotteissa sama kuva, tekijänoikeus syistä...</p>
+        <table >
+            <thead>
+                <tr>
+                    <th>Tuotekoodi</th>
+                    <th>Nimi</th>
+                    <th onclick="sortTable()" style="cursor: pointer;">Hinta</th>
+                    <th>Varastossa</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>123456</td>
+                    <td><a href="#tuote1" target="main" onclick="hider('tuotelista', 'tuote1')" >&nbsp; HP ZBook Fury 16 G9 i9-12/32/1000 kannettava </a></td>
+                    <td>6299€</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>654321</td>
+                    <td><a href="#tuote2" target="main" onclick="hider('tuotelista', 'tuote2')" >&nbsp; Mac Studio pöytätietokone M1 Ultra/64/1000 2022 </a></td>
+                    <td>4669€</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>456789</td>
+                    <td><a href="#tuote3" target="main" onclick="hider('tuotelista', 'tuote3')" >&nbsp; Lenovo ThinkPad P15 Gen2 15,6" kannettava i7/32/512 GB (musta) </a></td>
+                    <td>3359€</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>987654</td>
+                    <td><a href="#tuote4" target="main" onclick="hider('tuotelista', 'tuote4')" >&nbsp;Asus ExpertBook B7 Flip 14" i7/32/1TB 5G 2-in-1 kannettava </a></td>
+                    <td>2449€</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td>159874</td>
+                    <td><a href="#tuote5" target="main" onclick="hider('tuotelista', 'tuote5')" >&nbsp; Acer Chromebook 315 A4/4/32 15.6" kannettava</a> </td>
+                    <td>197€</td>
+                    <td>77</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="tuote1" style="display: none ;">
+        <h2>HP ZBook Fury 16 G9 i9-12/32/1000 kannettava</h2>
+        <button class="btn" onclick="hider('tuote1', 'tuotelista')">Takaisin</button>
+        <p>HP ZBook Fury 16 G9 -kannettava on tehokas työasema, joka on varustettu kestämään raskastakin työnkulkua
+             Intel®-prosessorin ja NVIDIA-näytönohjaimen ansiosta. Sen turvaominaisuuksiin kuuluu HP Sure Start – itsekorjaava BIOS.</p>
+        <img src="tuote0.jpg" alt="Hp ZBook">
+        <iframe width="900" height="523" src="https://www.youtube.com/embed/csQYsv-pVvs"
+         title="The Most EXPENSIVE Laptop I've Reviewed! // HP ZBook Fury G8" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        
+    </section>
+
+    <section id="tuote2" style="display: none ;">
+        <h2>Mac Studio pöytätietokone M1 Ultra/64/1000 2022  </h2>
+        <button class="btn" onclick="hider('tuote2', 'tuotelista')">Takaisin</button>
+        <p>Mac Studio 2022 -pöytätietokoneessa riittää suorituskykyä lukuisten raskaiden ohjelmistojen moniajoon,
+             jonka ansiosta tuottavuutesi nousee kokonaan uudelle tasolle. Laite on myös kompaktin kokoinen.</p>
+        <img src="tuote0.jpg" alt="Mac Studio">
+
+    </section>
+
+    <section id="tuote3" style="display: none ;">
+        <h2>Lenovo ThinkPad P15 Gen2 15,6" kannettava i7/32/512 GB (musta) </h2>
+        <button class="btn" onclick="hider('tuote3', 'tuotelista')">Takaisin</button>
+        <p>15,6” Lenovo ThinkPad P15 Gen2 -kannettava on helposti kuljetettava työasema, joka tarjoaa äärimmäistä
+             suorituskykyä esimerkiksi ammattilaisten AI- ja VR-projekteille. Huippukestävän laitteen näyttö tarjoaa 100 % sRGB-värit ja HDR-tuen..</p>
+        <img src="tuote0.jpg" alt="Lenovo">
+
+    </section>
+
+    <section id="tuote4" style="display: none ;">
+        <h2>Asus ExpertBook B7 Flip 14" i7/32/1TB 5G 2-in-1 kannettava</h2>
+        <button class="btn" onclick="hider('tuote4', 'tuotelista')">Takaisin</button>
+        <p>Monipuolisessa 14" Asus ExpertBook B7 Flip 5G 2-in-1-kannettavassa on kääntyvä kosketusnäyttö ja kynä,
+             joka kiinnittyy magneetilla näytön sivuun, joten voit käyttää sitä myös tablettina.</p>
+        <img src="tuote0.jpg" alt="Asus">
+
+    </section>
+
+    <section id="tuote5" style="display: none ;">
+        <h2>Acer Chromebook 315 A4/4/32 15.6" kannettava</h2>
+        <button class="btn" onclick="hider('tuote5', 'tuotelista')">Takaisin</button>
+        <p>15,6" Acer Chromebook -kannettava on varustettu päivittäiseen käyttöön suunnitellulla AMD A4-9120C APU -prosessorilla.
+             Sen 15,6-tuumainen HD-näyttö tarjoaa laadukkaan kuvan, ja käyttökokemuksesi kruunaa ylöspäin suunnatut kaiuttimet</p>
+        <img src="tuote0.jpg" alt="Chromebook">
+
+    </section>
+
+
+    <script>
+        function hider(piilota, nayta)
+        {
+            document.getElementById(piilota).style.display = "none";
+            document.getElementById(nayta).style.display = "block";
+        }
+
+    </script>
+<script>
+    function sortTable() //Koodi otettu alunperin w3schools sivuilta ja tehty omia muutoksia
+     {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("myTable");
+      switching = true;
+      var nouseva = false;
+      var eka = table.rows[0].getElementsByTagName("TD")[2].innerHTML.slice(0, -1);
+      var vika = table.rows[4].getElementsByTagName("TD")[2].innerHTML.slice(0, -1);
+      console.log(eka);
+      console.log(vika);
+      if (eka < vika )
+      {
+        nouseva = true;
+      }
+
+      /*Make a loop that will continue until
+      no switching has been done:*/
+      while (switching) {
+        //start by saying: no switching is done:
+        switching = false;
+        rows = table.rows;
+        /*Loop through all table rows (except the
+        first, which contains table headers):*/
+        for (i = 0; i < (rows.length - 1); i++) {
+          //start by saying there should be no switching:
+          shouldSwitch = false;
+          /*Get the two elements you want to compare,
+          one from current row and one from the next:*/
+          x = rows[i].getElementsByTagName("TD")[2];
+          y = rows[i + 1].getElementsByTagName("TD")[2];
+          //check if the two rows should switch place:
+          var numx = x.innerHTML.slice(0, -1);
+          var numy = y.innerHTML.slice(0, -1);
+          if (nouseva == true)
+          {
+            if (Number(numx) < Number(numy))
+            {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
+          }
+          else
+          {
+            if (Number(numx) > Number(numy))
+            {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
+          }
+
+        }
+        if (shouldSwitch) {
+          /*If a switch has been marked, make the switch
+          and mark that a switch has been done:*/
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+h1{
+    color: blue;
+}
+p{
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*-----------------------Wrapperi-------------------------------------------- */
+.wrapper {
+    text-align: center;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+/*-----------------------Otsikko-------------------------------------------- */
+.header{
+    text-align: center;
+    border-width: 20px;
+    border-style:groove;
+    border-color: blue;
+    width: 1360px;
+    height: 100px;
+    overflow: hidden;
+
+
+}
+/*-----------------------Navikointi-------------------------------------------- */
+.left_col{
+    background-color:steelblue;
+    width: 200px;
+    height: 1200px;
+    float: left;
+    overflow: hidden;
+    border-width: 20px;
+    border-style: groove;
+    border-color: blue;
+}
+
+
+.left_col a {
+    background-color:limegreen;
+    border: 10px solid steelblue;
+    padding: 16px 12px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+.left_col a:hover{
+    background-color: white;
+}
+/*-----------------------Pääsivu-------------------------------------------- */
+.main{
+    text-align: left;
+
+    border-width: 20px;
+    border-style:groove;
+    border-color: blue;
+    width: 1120px;
+    height: 1200px;
+    float: right;
+}
+iframe{
+    background-color: whitesmoke;
+}
+
+/*-----------------------Alatunniste-------------------------------------------- */
+.footer{
+    text-align: left;
+    width: 1360px;
+    height: 100px;
+    float: left;
+    border-width: 20px;
+    border-style:groove;
+    border-color: blue;
+}
+.footer img{
+    margin: 20px;
+    display: inline-block;
+}
+
+/*-----------------------Yhteystiedot-------------------------------------------- */
+
+.yhteystiedot{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.yhteystiedot table{
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+}
+.henkilöt{
+    font-size: 100%;
+    float: left;
+    color: black;
+    border: 2px solid black;
+    width: 490px;
+    height: 280px;
+    margin: 2px;
+    border-radius: 5px;
+}

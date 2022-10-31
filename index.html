@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Firman nimi</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+<!--------------------------Otsikko----------------------------------------------->
+        <div class="header">
+            <img src="Otsikko.png" alt="Otsikko!">
+        </div>
+
+<!--------------------------Navikointi Sivu----------------------------------------------->
+        <div class="left_col">
+            <nav>
+                <a href="pääsivu.html" target="main" >&nbsp; Pääsivu</a>
+                <a href="esittely.html" target="main" >&nbsp; Esittely</a>
+                <a href="tuotteet.html" target="main">&nbsp; Tuotteet</a>
+                <a href="yhteystiedot.html" target="main">&nbsp; Yhteystiedot</a>
+            </nav>
+        </div>
+
+<!--------------------------Pääsivu! Muut sivut päivittyvät tähän framiin----------------------------------------------->
+        <div class="main" id="main">
+            <iframe src="pääsivu.html" style="width:1120px;height:1200px;"; name="main"></iframe>
+        </div>
+
+<!--------------------------Alatunniste----------------------------------------------->
+        <div class="footer">
+            <a href="https://yle.fi/" target="_blank" title="Ylen sivut"><img src="450px-Ylen_logo.svg.png" alt="Ylen logo"></a>
+            <a href="https://www.mtv.fi/" target="_blank" title="Mtv3 sivut"><img src="1200px-Mtv3logo.png" alt="Mtv3 logo"></a>
+            <a href="https://careeria.fi/" target="_blank" title="Careerian sivut"><img src="Careeria-Oy-logo.jpg" alt="Careeria logo"></a>
+            <p style="float: right; margin: 10px;">Kuvitteellisen Yrityksen kotisivut!</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
